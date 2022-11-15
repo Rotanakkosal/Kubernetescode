@@ -1,6 +1,6 @@
 node {
     def app
-    agent {label 'j-worker'}
+    agent label 'j-worker'
     stage('Clone repository') {
         git url: 'https://github.com/Rotanakkosal/kubernetescode.git'
     }
