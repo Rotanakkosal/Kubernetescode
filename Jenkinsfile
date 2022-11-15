@@ -1,4 +1,5 @@
 node {
+    agent {label 'j-worker'}
     def app
     stage('Clone repository') {
         checkout scm
