@@ -2,7 +2,7 @@ node {
     agent {label 'j-worker'}
     def app
     stage('Clone repository') {
-        checkout scm
+        git url: 'https://github.com/Rotanakkosal/kubernetescode.git'
     }
     stage('Build image') {
        app = docker.build("rotanakkosal/miniproject")
